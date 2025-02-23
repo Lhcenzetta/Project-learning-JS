@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate PassWord</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: darkblue;
+        }
+        .container{
+            height: auto;
+            width: 60%;
+            margin: 150px 0 0 10%;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        p{
+            font-size: 2rem;
+            color: white;
+        }
+        h1{
+            color: rgb(12, 123, 12);
+        }
+        .bar{
+            width: 36%;
+            height: 4px;
+            background-color: rgb(12, 123, 12);
+            margin-bottom: 15px;
+        }
+        .generate{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: auto;
+            background-color: white;
+            padding-right: 1%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .generate i{
+            cursor: pointer;
+            font-size: 1.5rem;
+            color:green;
+        }
+        input{
+            flex: 1;
+            width:80%;
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 15px 0 15px 13px;
+        }
+        button{
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            width: 20%;
+            padding: 10px 5px 10px 5px;
+            background-color: rgb(67, 120, 67);
+        }
+        button:hover{
+            background-color: rgb(131, 213, 131);
+        }
+        button i{
+           
+            margin-right: 4px;
+        }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <p>Generate a</p>
+        <h1>Random Password</h1>
+        <div class="bar"></div>
+        <div class="generate">
+            <input id = "password" type="text" >
+            <i  class="fa-solid fa-copy"></i>
+        </div>
+        <button  onclick=" GeneratePassword()"><i class="fa-solid fa-bolt"></i>Generate password</button>
+        <script src="scripte.js"></script>
+    </div>
+</body>
+</html>
